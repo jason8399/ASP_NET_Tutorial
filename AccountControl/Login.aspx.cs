@@ -13,5 +13,13 @@ namespace AccountControl
         {
             
         }
+
+        protected void LoginBtn_Click(object sender, EventArgs e)
+        {
+            TextBox UserId = form1.FindControl("UserId") as TextBox;
+            TextBox UserPwd = form1.FindControl("UserPwd") as TextBox;
+            UserId.Text = UserPwd.Text;
+            UserId.DataBind();
+        }
     }
 }

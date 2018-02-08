@@ -26,7 +26,7 @@
                 </td>
             </tr>
         </table>
-        <asp:Button ID="LoginBtn" runat="server" Text="Login" />
+        <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click" />
     </div>
     </form>
 </body>
